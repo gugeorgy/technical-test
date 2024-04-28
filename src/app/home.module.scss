@@ -1,0 +1,17 @@
+@media (min-height: 700px) {
+  .main {
+    height: calc(100vh - 13rem);
+  }
+}
+
+@media (max-height: 750px) {
+  .main {
+    height: calc(100vh - 8rem);
+  }
+}
+
+@media (max-height: 700px) {
+  .main {
+    height: calc(100vh - 2rem);
+  }
+}

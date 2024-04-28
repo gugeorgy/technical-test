@@ -1,0 +1,17 @@
+@import 'tailwindcss/screens';
+
+.footer {
+  flex-direction: column;
+
+  @screen sm {
+    flex-direction: row;
+  }
+
+  .banner {
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+}

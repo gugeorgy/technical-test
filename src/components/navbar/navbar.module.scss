@@ -1,0 +1,18 @@
+.menu {
+  a.active {
+    position: relative;
+    color: theme('colors.yellow');
+    letter-spacing: 0.2em;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 100%);
+      border-radius: 50%;
+      background-color: theme('colors.yellow');
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font: inherit;
+
+  &::before &::after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+
+  body {
+    font-family: theme('fontFamily.nunito');
+    background-image: url('/sk-home.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    color: theme('colors.white');
+    font-size: theme('fontSize.xs');
+
+    @screen sm {
+      font-size: theme('fontSize.base');
+    }
+
+    p {
+      text-wrap: pretty;
+    }
+
+    ol ul {
+      list-style-type: none;
+    }
+
+    img video {
+      display: block;
+      height: auto;
+      max-width: 100%;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
