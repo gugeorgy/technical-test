@@ -20,7 +20,7 @@ const config: Config = {
         'logo-md': '6rem',
         'logo-sm': '4rem',
         home: 'calc(100vh - 14rem)',
-        'home-sm': 'calc(100vh - 10rem)',
+        'home-sm': 'calc(100vh - 9rem)',
         'home-short': 'max-content',
         userProfile: '3.5rem',
       },

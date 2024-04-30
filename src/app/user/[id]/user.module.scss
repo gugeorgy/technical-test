@@ -1,0 +1,12 @@
+@media (min-height: 700px) {
+  .main {
+    height: calc(100vh - 13rem);
+  }
+}
+
+@media (max-height: 500px) {
+  .main {
+    height: calc(100vh);
+    align-items: end;
+  }
+}

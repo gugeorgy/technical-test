@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   reactStrictMode: true, // if true, it runs everything twice to detect side effects
@@ -7,4 +7,7 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
-}
+  images: {
+    domains: ['kangurus.com'],
+  },
+};

@@ -1,46 +1,105 @@
+/**
+ * Import Tailwind's base, components, and utilities styles.
+ */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/**
+ * Apply global styles to all elements.
+ */
 * {
+  /**
+   * Inherit the font from the parent element.
+   */
   font: inherit;
 
+  /**
+   * Apply box-sizing: inherit to ::before and ::after pseudo-elements.
+   */
   &::before &::after {
     box-sizing: inherit;
   }
 }
 
+/**
+ * Apply styles to the html element.
+ */
 html {
+  /**
+   * Use smooth scrolling.
+   */
   scroll-behavior: smooth;
 
+  /**
+   * Apply styles to the body element.
+   */
   body {
+    /**
+     * Use the Nunito font.
+     */
     font-family: theme('fontFamily.nunito');
-    background-image: url('/sk-home.jpg');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+
+    /**
+     * Use a background image, centered and covering the entire element.
+     */
+    background: url('/sk-home.jpg') no-repeat center;
+    background-size: cover;
+
+    /**
+     * Use white text color.
+     */
     color: theme('colors.white');
+
+    /**
+     * Use a small font size by default.
+     */
     font-size: theme('fontSize.xs');
 
+    /**
+     * Use a base font size on small screens and up.
+     */
     @screen sm {
       font-size: theme('fontSize.base');
     }
 
+    /**
+     * Apply styles to paragraph elements.
+     */
     p {
+      /**
+       * Use pretty text wrapping.
+       */
       text-wrap: pretty;
     }
 
+    /**
+     * Remove list styles from ordered and unordered lists.
+     */
     ol ul {
       list-style-type: none;
     }
 
+    /**
+     * Apply styles to image and video elements.
+     */
     img video {
+      /**
+       * Display as block elements.
+       * Use a max width of 100% and auto height.
+       */
       display: block;
       height: auto;
       max-width: 100%;
     }
 
+    /**
+     * Apply additional styles to image elements.
+     */
     img {
+      /**
+       * Use object-fit: cover to resize the image to cover its box.
+       */
       object-fit: cover;
     }
   }

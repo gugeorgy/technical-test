@@ -1,4 +1,9 @@
-// Heading.tsx
+/**
+ * `Heading` is a component that displays two headings.
+ * The first heading is "Space" and the second heading is "Kangurus".
+ *
+ * @returns {JSX.Element} The Heading component.
+ */
 export default function Heading() {
   return (
     <div className="font-loomattic uppercase">
